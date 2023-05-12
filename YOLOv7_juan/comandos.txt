@@ -1,0 +1,4 @@
+
+
+python detect.py --weights yolo-hatsu-2.pt --conf 0.1 --img-size 640 --source 0 --view-img --no-trace
+https://www.youtube.com/watch?v=-QWxJ0j9EY8

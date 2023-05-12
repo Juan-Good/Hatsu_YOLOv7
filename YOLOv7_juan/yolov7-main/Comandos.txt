@@ -1,0 +1,20 @@
+### Entrenamiento
+
+python train.py --workers 1 --device 0 --batch-size 8 --epochs 100 --img 640 640 --data data/hatsu_test3.yaml --hyp data/hyp.scratch.custom.yaml --cfg cfg/training/yolov7-hatsu3.yaml --name yolov7-hatsu3 --weights yolov7.pt
+
+
+python train.py --workers 1 --device 0 --batch-size 8 --epochs 100 --img 640 640 --data data/hatsu_test3.yaml --hyp data/hyp.scratch.custom.yaml --cfg cfg/training/yolov7-hatsu3.yaml --name yolov7-hatsu3 --weights yolov7.pt
+
+## Detección 
+
+python detect.py --weights yolo-hatsu-2.pt --conf 0.1 --img-size 640 --source 0 --view-img --no-trace
+
+python detect_virgen.py --weights yolo-hatsu5.pt --conf 0.7 --img-size 640 --source 1 --view-img --no-trace
+
+python detect_roboflow_plano.py --weights yolo-hatsu5.pt --conf 0.7 --img-size 640 --source 0 --view-img --no-trace --nosave
+
+python detect_roboflow_set.py --weights yolo-hatsu5.pt --conf 0.7 --img-size 640 --source 1 --view-img --no-trace --nosave
+
+python detect_roboflow_set.py --weights yolo-hatsu5.pt --conf 0.7 --img-size 640 --source "control.mp4" --view-img --no-trace --nosave
+
+python detect_virgen.py --weights yolo-hatsu7.pt --conf 0.6 --img-size 640 --source "control.mp4" --view-img --name Prueba__Hatsu_7
