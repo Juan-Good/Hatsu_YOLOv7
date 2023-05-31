@@ -1,7 +1,10 @@
 
 # Detector de objetos personalizado para retail con YOLOV7 y Bytrackt
+
 **Universidad Nacional de Colombia**
+
 **Realizado por:** Juan Andres Bueno
+
 **Dirigido por:** Jorge Sofrony
 
 
