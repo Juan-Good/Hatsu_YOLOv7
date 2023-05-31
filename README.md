@@ -10,6 +10,8 @@
 
 Se entrena un modelo personalizado para la detección de un set de productos seleccionados, se usa YOLOV7, posteriormente se adapta un codigo para el uso de Supervision (Paquete de roboflow para el conteo de productos)
 
+![Resultados de detector](https://github.com/Juan-Good/Hatsu_YOLOv7/blob/main/images/hatsu7.gif)
+
 ## Descripción
 
 Se busca realizar un modelo de detección personalizada para entornos retail, para ello se capturan y generan distintos datasets para el entrenamiento de un modelo de detección de objetos. Se desea que el sistema sea capaz de identificar los objetos en un espacio definido y llevar el registro de los objetos entrando y saliendo de este espacio para asi automatizar el proceso de compra y mejorar la experiencia global del usuario, para tal fin se emplea Supervisión para el conteo de entradas y salidas definiendo una linea en la imagen  como frontera, asi mismo se usa ByteTrackt como rastreador.
